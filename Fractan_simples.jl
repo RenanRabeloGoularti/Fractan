@@ -9,9 +9,6 @@ function principal()::Nothing
         (0.5, 0.5, 0.2, 0.0)
         (0.5, -0.5, -0.2, 0.0)
     ] # Funções do SCI.
-    # A primeira entrada não é o valor de 'k' e a segunda não é o de 'theta'!
-    # A primeira entrada é o valor de 'k*cos(theta)' e a segunda 'k*sin(theta)'
-    # Não se confunda com o que está no relatório!
 
     imagem::Matrix{N0f8} = zeros(N0f8, resolucao)
     fator::Float64 = Float64(min(resolucao[1], resolucao[2])) # Necessário para marcar os pontos
